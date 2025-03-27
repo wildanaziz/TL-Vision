@@ -153,6 +153,13 @@ Diskusi tentang tantangan dan peluang dalam Computer Vision, serta implementasi 
 Tambahkan ringkasan atau hasil analisismu di sini.
 ```
 
+6️⃣ Commit dan Push Perubahan ke Fork Repository-mu
+```bash
+git add .
+git commit -m "Menambahkan studi kasus dan side project - Week 1"
+git push origin week-1-username
+```
+
 7️⃣ Buat Pull Request (PR) ke Repository Utama
 - Buka repository utama (TL-Vision).
 - Klik Pull Requests > New Pull Request.
