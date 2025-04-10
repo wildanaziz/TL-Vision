@@ -4,6 +4,32 @@ Apa itu OpenCV? OpenCV merupakan sebuah library yang bisa kita gunakan untuk mel
 
 ## Instalasi
 
+
+### Windows
+1. Download dan Install Anaconda
+Kamu dapat mengunjungi website [anaconda](www.anaconda.com/products/individual#Downloads)
+2. Pilih versi 64-bit
+3. Ikuti proses instalasi dan pastikan checklist "Add Anaconda3 to my PATH environment variable"
+4. Membuat environtment baru
+```bash
+conda create --name opencv-env
+```
+5. mengaktifkan environment
+```bash
+conda activate opencv-env
+```
+6. install opencv pada environment yang telah dibuat
+```bash
+conda install -c conda-forge opencv
+```
+7. Periksa Instalasi opencv
+```python
+import cv2 as cv
+cv.__version__
+```
+
+
+### Ubuntu (Linux)
 **Python**
 
 Untuk OpenCV versi python bisa langsung diinstall memakai package manager apt, seperti berikut:
