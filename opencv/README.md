@@ -4,7 +4,6 @@ Apa itu OpenCV? OpenCV merupakan sebuah library yang bisa kita gunakan untuk mel
 
 ## Instalasi
 
-
 ### Windows
 1. Download dan Install Anaconda
 Kamu dapat mengunjungi website [anaconda](www.anaconda.com/products/individual#Downloads)
@@ -28,7 +27,6 @@ import cv2 as cv
 cv.__version__
 ```
 
-
 ### Ubuntu (Linux)
 **Python**
 
@@ -48,14 +46,22 @@ sudo apt install libopencv-dev -y
 
 ## Konsep
 
-### Dasar OpenCV
+### Import Lib
+Sebelum melakukan operasi menggunakan opencv pastikan pada baris awal telah mengimpor library
+
+```python
+import cv2 as cv
+print(cv.__version__)
+```
+
+### Essential Function of OpenCV
 
 **Read, Display, Write Image**
 
 Read - Pembacaan suatu gambar dilakukan dengan fungsi imread().
 
-```c++
-imread(filename, flags)
+```python
+cv.imread(filename, flags)
 ```
 
 - filename: berisi path ke file gambar
@@ -63,8 +69,8 @@ imread(filename, flags)
 
 Display - Jika ingin menampilkan suatu gambar, bisa dilakukan dengan fungsi imshow().
 
-```c++
-imshow(windowname, image)
+```python
+cv.imshow(windowname, image)
 ```
 
 - windowname: berisi nama window yang akan ditampilkan
@@ -72,8 +78,8 @@ imshow(windowname, image)
 
 Write - Penulisan suatu gambar dilakukan dengan fungsi imread().
 
-```c++
-imwrite(filename, image)
+```python
+cv.imwrite(filename, image)
 ```
 
 - filename: berisi path untuk melakukan save
@@ -83,6 +89,19 @@ imwrite(filename, image)
 
 Berikut adalah penggunaan sederhana dari OpenCV yang menggunakan fungsi-fungsi diatas.
 
+Jika teman-teman menggunakan python
+```python
+import cv2 as cv
+
+img = cv.imread("/your/path/folders") # read path
+cv.imshow("Membaca Image", img) # display image path
+
+cv.imwrite("image-1.jpg", img) # save to pwd path
+cv.waitKey(0) # prevent to close or wait for a keystroke
+cv.destroyAllWindows() # destroy all windows created
+```
+
+Jika teman-teman menggunakan CPP
 ```c++
 // library
 #include<opencv2/opencv.hpp>
@@ -105,6 +124,31 @@ imwrite("grayscale.jpg", img_grayscale); // write
 
 Kita bisa memakai VideoCapture() untuk melakukan pengambilan frame dari video/camera.
 
+Jika teman-teman menggunakan python
+```python
+import cv2 as cv
+
+# load video by path
+cap = cv.VideoCapture("/path/to/your/folders")
+
+# load live video by webcam
+cap = cv.VideoCapture(0) # 0 for main webcam ur first device, if u use 2 webcam u can change 0 or 1
+
+# loop for video
+while True:
+	isTrue, frame = cap.read() # read by frame
+	
+	cv.imshow("Name Video", frame)
+
+	if cv.waitKey(20) & 0xFF == ord('q'): # stop video
+		break
+
+cap.release() # post
+cv.destroyAllWindows() # destroy
+
+```
+
+Jika teman-teman menggunakan CPP
 ```c++
 cap = cv::VideoCapture(0);
 while (cap.isOpened()) {
@@ -127,14 +171,14 @@ while (cap.isOpened()) {
 <img alt="RGB Color Space" src="https://docs.opencv.org/3.4/Threshold_inRange_RGB_colorspace.jpg" />
 </div>
 
-Format BGR merupakan format default yang digunakan oleh OpenCV untuk membaca dan menulis gambar. Color space ini memiliki elemen:
+Pada OpenCV format color yang digunakan adalah format BGR. Dimana format tersebut diset default yang digunakan oleh OpenCV untuk membaca dan menulis gambar. Color space ini memiliki elemen:
 1. Blue
 2. Green
 3. Red
 
 **RGB**
 
-Sama dengan BGR. Bedanya, posisi _channel_ B dan R ditukar. Format ini merupakan format yang banyak perangkat gunakan untuk membaca dan mengeluarkan gambar. Color space ini memiliki elemen:
+Secara teori mirip dengan BGR. Akan tetapi minor difference terdapat pada posisi _channel_ B dan R ditukar. Format ini merupakan format yang banyak perangkat gunakan untuk membaca dan mengeluarkan gambar. Apabila teman-teman menggunakan python dan menggunakan library matplotlib untuk menampilkan gambar maka format RGB yang akan dipakai. Pasalnya library matplotlib tidak mendukung format BGR dan perlu convertColor BGR2RGB. Color space ini memiliki elemen:
 1. Red
 2. Green
 3. Blue
@@ -159,6 +203,18 @@ Grayscale memperhitungkan semua aspek gambar dalam satu channel. Biasanya color 
 
 Untuk melakukan perubahan dalam color space sebuah gambar di OpenCV, dapat dilakukan melalui:
 
+Jika teman-teman menggunakan python
+```python
+cv.cvtColor(inputFile, outputFile, colorSpace)
+
+colorSpaceRGB = COLOR_BGR2RGB
+colorSpaceHSV = COLOR_BGR2HSV
+colorSpaceGray = COLOR_BGR2GRAYSCALE
+
+more information about colorSpace parameter: [colorSpace documentation](https://docs.opencv.org/3.4/d8/d01/group__imgproc__color__conversions.html)
+```
+
+Jika teman-teman menggunakan CPP
 ```c++
 cvtColor(inputFile, outputFile, colorSpace)
 ```
@@ -167,6 +223,23 @@ cvtColor(inputFile, outputFile, colorSpace)
 
 Dalam melakukan deteksi warna di image, biasanya color space yang digunakan yaitu HSV. Berikut adalah contoh program untuk deteksi warna sekita hue 150: 
 
+
+```python
+mat framehsv
+cv.cvtColor(frame, framehsv, COLOR_BGR2HSV)
+
+hue = 150
+thresh = 40
+
+Scalar minHSV = cv.cvScalar(hue - thresh, hue - thresh, hue - thresh)
+Scalar maxHSV = cv.cvScalar(hue + thresh, hue + thresh, hue + thresh)
+
+Mat maskHSV, resultHSV
+cv.inRange(brightHSV, minHSV, maxHSV, maskHSV)
+cv.bitwise_and(brightHSV, brightHSV, resultHSV, maskHSV)
+
+cv.imshow("Result of HSV:" resultHSV)
+```
 ```c++
 Mat framehsv; 
 cvtColor(frame, framehsv, COLOR_BGR2HSV); 
@@ -186,9 +259,17 @@ imshow("Result HSV", resultHSV)
 
 ## Compile Code
 
-C++
+Jika teman-teman menggunakan python
+```bash
+conda env list # looking for ur env list
+conda activate <your environment which was installed openCV > # activate your existing env
+
+python3 <your name file.py >
 
 ```
+
+Jika teman teman menggunakan CPP
+```bash
 g++ <file> -o main `pkg-config --cflags --libs opencv4`
 ```
 
