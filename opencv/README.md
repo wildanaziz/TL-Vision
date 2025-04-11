@@ -211,8 +211,9 @@ colorSpaceRGB = COLOR_BGR2RGB
 colorSpaceHSV = COLOR_BGR2HSV
 colorSpaceGray = COLOR_BGR2GRAYSCALE
 
-more information about colorSpace parameter: [colorSpace documentation](https://docs.opencv.org/3.4/d8/d01/group__imgproc__color__conversions.html)
 ```
+more information about colorSpace parameter: [colorSpace documentation](https://docs.opencv.org/3.4/d8/d01/group__imgproc__color__conversions.html)
+
 
 Jika teman-teman menggunakan CPP
 ```c++
