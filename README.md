@@ -1,4 +1,4 @@
-# 🚀 Roadmap Vision Amarine (April - Juli 2025)
+# 🚀 Roadmap Vision Amarine (April - September 2025)
 
 Selamat datang di Roadmap Vision Amarine! 🎯 Repository ini dirancang sebagai panduan lengkap untuk mempelajari Computer Vision, Deep Learning, dan penerapannya dalam berbagai studi kasus dunia nyata.
 
@@ -35,7 +35,7 @@ Selamat belajar & happy coding! 🚀✨
 | 8️⃣ | Learn ROS 2 & Integration with YOLO | [Go to Week 8](#-week-8-learn-ros-2-with-motion-amarine) | [📂 Week 8](./Week_8/) | 17 June 2025 | 22 June 2025 | ⬜️ |
 | 9️⃣ | EDA & Deployment with Streamlit | [Go to Week 9](#-week-9-introduction-to-eda--deployment-with-streamlit) | [📂 Week 9](./Week_9/) | 24 June 2025 | 29 June 2025 | ⬜️ |
 | Break | Liburan | PIC Memberi Resource Penguatan Week 3 - Week 7 | - | 23 June 2025 | 17 August 2025 | ⬜️ |
-| 🔟 | Model Optimization & Hyperparameter Tuning | [Go to Week 10](#-week-10-optimasi-model--hyperparameter-tuning) | [📂 Week 10](./Week_10/) | 19 August 2025 | 24 June 2025 | ⬜️ |
+| 🔟 | Model Optimization & Hyperparameter Tuning | [Go to Week 10](#-week-10-optimasi-model--hyperparameter-tuning) | [📂 Week 10](./Week_10/) | 19 August 2025 | 24 August 2025 | ⬜️ |
 | 1️⃣1️⃣ | Explainability AI (XAI) | [Go to Week 11](#-week-11-explainability-ai-xai) | [📂 Week 11](./Week_11/) | 26 August 2025 | 31 August 2025 | ⬜️ |
 | 1️⃣2️⃣ | Edge Deployment & IoT Integration | [Go to Week 12](#-week-12-edge-deployment--iot-integration) | [📂 Week 12](./Week_12/) | 02 September 2025 | 07 September 2025 | ⬜️ |
 | 1️⃣3️⃣ | Final Project: Edge AI & Cloud Integration | [Go to Final Project](#-final-project-edge-ai--cloud-integration) | [📂 Final Project](./Week_12/) | 09 September 2025 | 23 September 2025 | ⬜️ |
