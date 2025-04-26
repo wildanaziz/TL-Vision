@@ -1,0 +1,2 @@
+# Tugas 01 OpenCV
+Terkait cara membuat sebuah canvas berwarna putih dengan ukuran 640 * 480 dan menggambarkan stickman yang terdiri atas kepala berbentuk bulat (outline no fill), persegi (outline no fill) sebagai badannya, dan organ gerak kaki dan tangan menggunakan line (with fill).
