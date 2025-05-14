@@ -15,7 +15,7 @@ Mitos Filkom merupakan seorang mahasiswa semester 4 di prodi yang katanya paling
 dataset_fashion_mnist: https://www.kaggle.com/datasets/zalando-research/fashionmnist
 2. Untuk poin 1-5 vision amarine peers harus mencantumkan laporan proses pengerjaan dalam bentuk README.md disetiap repository submission yang dibuat
 3. Untuk poin 1 vision amarine peers bisa melihat video tutorial terkait MLP di [week-3](https://github.com/wildanaziz/TL-Vision/tree/main/weeks/week-3)
-4. Untuk poin 2 vision amarine peers bisa melihat video tutorial terkait CNN di [week-4](weeks/week-4/README.md)
+4. Untuk poin 2 vision amarine peers bisa melihat video tutorial terkait CNN di [week-4](https://github.com/wildanaziz/TL-Vision/tree/main/weeks/week-4)
 5. Pengerjaan bersifat berkelompok, vision amarine peers dapat membagi tugas antar individu agar dapat menyelesaikan tugas berikut dan diharuskan untuk menuliskan kontribusi pada poin berapa yang dikerjakan pada README.md.contoh struktur directory submission (boleh ditiru)
 
 ```markdown 
