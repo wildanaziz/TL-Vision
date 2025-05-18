@@ -6,7 +6,7 @@ Pada minggu ke-5, kita akan mengulas **Roboflow** yang telah diajarkan oleh **Co
 1. [Requirements](#requirements)
     - [CPU](#requirements-cpu)
     - [GPU dengan CUDA](#requirements-gpu)
-2. [Installation](#cuda-installation)
+2. [Installation](#installation)
     - [CPU](#cpu)
     - [GPU with CUDA](#gpu-dengan-cuda--nvidia-only)
 3. [Roboflow](#roboflow)
