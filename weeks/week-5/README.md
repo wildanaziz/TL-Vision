@@ -7,8 +7,8 @@ Pada minggu ke-5, kita akan mengulas **Roboflow** yang telah diajarkan oleh **Co
     - [CPU](#requirements-cpu)
     - [GPU dengan CUDA](#requirements-gpu)
 2. [Installation](#cuda-installation)
-    - [CPU]()
-    - [GPU with CUDA]()
+    - [CPU](#cpu)
+    - [GPU with CUDA](#gpu-dengan-cuda--nvidia-only)
 3. [Roboflow](#roboflow)
     - [Quickstart](#quickstart)
 4. [Introduction to YOLO](#yolo-dasar)
@@ -44,7 +44,7 @@ Nahhh, ini adalah beberapa requirements perangkat lunak dan perangkat keras untu
 ```
 **Catatan:**
 - Unduh CUDA Toolkit 12.6 dari NVIDIA Developer. Unduh cuDNN 9.2.0 dari NVIDIA Developer (register dulu atau kalau dah punya akun tinggal masuk). 
-- Pastikan driver GPU NVIDIA Anda kompatibel dengan CUDA 12.6. 
+- Pastikan driver GPU NVIDIA temen-temen kompatibel dengan CUDA 12.6. 
 - Gunakan Conda untuk mengelola dependensi agar lebih mudah: `conda activate yolo_env.`
 
 ## Installation
@@ -137,7 +137,7 @@ Setelah selesai proses instalasi bisa langsung cuss ke section **[Roboflow](#rob
 
 ## Roboflow
 
-Roboflow adalah platform yang membantu Anda membangun, melatih, dan menguji model komputer vision dengan lebih cepat dan lebih mudah. Dengan Roboflow, Anda dapat membuat dataset, melatih model, dan menguji model dengan lebih cepat dan lebih mudah.
+Roboflow adalah platform yang membantu temen-temen membangun, melatih, dan menguji model komputer vision dengan lebih cepat dan lebih mudah. Dengan Roboflow, temen-temen dapat membuat dataset, melatih model, dan menguji model dengan lebih cepat dan lebih mudah.
 
 ### Quickstart
 Berikut adalah langkah-langkah sederhana untuk memulai menggunakan Roboflow, mulai dari registrasi hingga mengekspor dataset dalam format .yaml untuk pelatihan YOLO:
@@ -148,7 +148,7 @@ Berikut adalah langkah-langkah sederhana untuk memulai menggunakan Roboflow, mul
 - Setelah registrasi, buat workspace baru (misalnya, `taskVisionAmarine`) dan project baru dengan tipe **"Object Detection"**.
     
 2. **Cara Pemakaian:**
-- Unggah gambar ke proyek Anda dengan drag-and-drop di dashboard Roboflow atau melalui kode Python menggunakan Roboflow API:
+- Unggah gambar ke proyek temen-temen dengan drag-and-drop di dashboard Roboflow atau melalui kode Python menggunakan Roboflow API:
     ```python
     ### contoh penggunaan roboflow API
     from roboflow import Roboflow
@@ -175,8 +175,8 @@ Berikut adalah langkah-langkah sederhana untuk memulai menggunakan Roboflow, mul
     - `Train`: 70% (untuk pelatihan model).
     - `Val`: 20% (untuk validasi selama pelatihan).
     - `Test`: 10% (untuk evaluasi akhir model).
-* Roboflow akan secara otomatis membagi dataset sesuai rasio yang Anda tentukan.
-* Anda juga dapat menggunakan kode Python dengan pustaka `supervision` untuk membagi dataset secara manual:
+* Roboflow akan secara otomatis membagi dataset sesuai rasio yang temen-temen tentukan.
+* temen-temen juga dapat menggunakan kode Python dengan pustaka `supervision` untuk membagi dataset secara manual:
     ```python
     import supervision as sv
     ds = sv.DetectionDataset.from_yolo(
@@ -216,7 +216,7 @@ YOLO (You Only Look Once) adalah sebuah model komputer vision yang dikembangkan 
 
 YOLO memiliki beberapa mode yang dapat digunakan untuk melatih dan menguji model. Berikut adalah beberapa mode yang tersedia:
 
-Untuk memulai menggunakan YOLO, Anda dapat mengikuti step by step yang menggunakan **quick navigation** berikut:
+Untuk memulai menggunakan YOLO, temen-temen dapat mengikuti step by step yang menggunakan **quick navigation** berikut:
 > [Train](#train)  
 
 > [Validation](#validation-val)  
@@ -225,14 +225,14 @@ Untuk memulai menggunakan YOLO, Anda dapat mengikuti step by step yang menggunak
 
 #### Train
 
-Mode train digunakan untuk melatih model YOLO. Dalam mode ini, Anda dapat menggunakan dataset yang telah dibuat untuk melatih model.
+Mode train digunakan untuk melatih model YOLO. Dalam mode ini, temen-temen dapat menggunakan dataset yang telah dibuat untuk melatih model.
 
-1. **Persiapkan Dataset**: Pastikan Anda memiliki dataset dalam format yang kompatibel dengan YOLO (misalnya, format YOLO txt). Anda dapat menggunakan Roboflow untuk menyiapkan dataset.
+1. **Persiapkan Dataset**: Pastikan temen-temen memiliki dataset dalam format yang kompatibel dengan YOLO (misalnya, format YOLO txt). temen-temen dapat menggunakan Roboflow untuk menyiapkan dataset.
 2. **Instal YOLO**: Instal pustaka Ultralytics menggunakan pip:
    ```bash
    pip install ultralytics
    ```
-3. **Jalankan Pelatihan:** Gunakan perintah berikut untuk melatih model YOLOv8 pada dataset Anda:
+3. **Jalankan Pelatihan:** Gunakan perintah berikut untuk melatih model YOLOv8 pada dataset temen-temen:
     ```bash
     yolo train model=yolov8n.pt data=dataset.yaml epochs=100 imgsz=640
     ```
@@ -249,9 +249,9 @@ names: ['kelas1', 'kelas2']  # nama kelas
 
 #### Validation (Val)
 
-Mode val digunakan untuk menguji model YOLO. Dalam mode ini, Anda dapat menggunakan dataset yang telah dibuat untuk menguji model. Berikut cara detailnya:
+Mode val digunakan untuk menguji model YOLO. Dalam mode ini, temen-temen dapat menggunakan dataset yang telah dibuat untuk menguji model. Berikut cara detailnya:
 
-1. **Siapkan Model dan Dataset:** Pastikan Anda memiliki model yang telah dilatih (misalnya, best.pt) dan dataset validasi.
+1. **Siapkan Model dan Dataset:** Pastikan temen-temen memiliki model yang telah dilatih (misalnya, best.pt) dan dataset validasi.
 2. **Jalankan Validasi:** Gunakan perintah berikut untuk mengevaluasi model:
     ```bash
     yolo val model=runs/train/exp/weights/best.pt data=dataset.yaml
@@ -260,13 +260,13 @@ Mode val digunakan untuk menguji model YOLO. Dalam mode ini, Anda dapat mengguna
     * `data`: File konfigurasi dataset yang sama seperti saat pelatihan.
 3. **Hasil:** Hasil validasi seperti metrik presisi, recall, dan mAP akan ditampilkan di terminal dan disimpan di folder `runs/val/`.
 
-***Catatan:** Mode ini membantu Anda memahami seberapa baik model bekerja pada data yang tidak digunakan selama pelatihan.*
+***Catatan:** Mode ini membantu temen-temen memahami seberapa baik model bekerja pada data yang tidak digunakan selama pelatihan.*
 
 #### Predict
 
-Mode predict digunakan untuk memprediksi objek dalam gambar menggunakan model YOLO yang telah dilatih. Dalam mode ini, Anda dapat menggunakan gambar yang belum pernah dilihat sebelumnya untuk memprediksi objek. Berikut cara detailnya:
+Mode predict digunakan untuk memprediksi objek dalam gambar menggunakan model YOLO yang telah dilatih. Dalam mode ini, temen-temen dapat menggunakan gambar yang belum pernah dilihat sebelumnya untuk memprediksi objek. Berikut cara detailnya:
 
-1. **Siapkan Model dan Input:** Pastikan Anda memiliki model terlatih dan file gambar/video untuk diprediksi.
+1. **Siapkan Model dan Input:** Pastikan temen-temen memiliki model terlatih dan file gambar/video untuk diprediksi.
 2. **Jalankan Prediksi:** Gunakan perintah berikut untuk memprediksi objek:
     ```bash
     yolo predict model=runs/train/exp/weights/best.pt source=/path/to/image.jpg
@@ -278,7 +278,7 @@ Mode predict digunakan untuk memprediksi objek dalam gambar menggunakan model YO
     ```bash
     yolo predict model=runs/train/exp/weights/best.pt source=/path/to/video.mp4
     ```
-***Catatan:** Anda dapat menambahkan parameter seperti conf=0.5 untuk mengatur ambang batas kepercayaan (confidence threshold) agar hasil lebih akurat.*
+***Catatan:** Temen-temen dapat menambahkan parameter seperti conf=0.5 untuk mengatur ambang batas kepercayaan (confidence threshold) agar hasil lebih akurat.*
 
 ## Reference
 [1] Roboflow. (n.d.). *Get started with Roboflow*. Retrieved May 18, 2025, from https://roboflow.com/  
