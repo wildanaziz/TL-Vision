@@ -27,9 +27,9 @@ Selamat belajar & happy coding! 🚀✨
 |---------|---------|--------------|-------------|-------------|-----------------|------------|
 | 1️⃣ | Bonding Session & Intro to Vision Amarine | [Go to Week 1](#-week-1-bonding-session-and-introduction-to-vision-amarine-april) | [📂 Week 1](/weeks/week-1/) | 15 April 2025 | 20 April 2025 | ✅ |
 | 2️⃣ | Hands-on OpenCV | [Go to Week 2](#-week-2-introduction-and-hands-on-with-opencv-april) | [📂 Week 2](/weeks/week-2/) | 22 April 2025 | 27 April 2025 | ✅ |
-| 3️⃣ | Intro to CNN & Hands-on from Paper | [Go to Week 3](#-week-3-introduction-to-cnn--hands-on-from-scratch-using-paper-aprilmay) | [📂 Week 3](./Week_3/) | 29 April 2025 | 04 May 2025 | ✅ |
-| 4️⃣ | Deep Dive CNN & Case Study | [Go to Week 4](#-week-4-deep-dive-with-cnn-and-case-study-may) | [📂 Week 4](./Week_4/) | 06 May 2025 | 11 May 2025 | ⬜️ |
-| 5️⃣ | Create Dataset & Use Open Source Dataset | [Go to Week 5](#-week-5-how-to-create-a-dataset--using-secondary-data-may) | [📂 Week 5](./Week_5/) | 13 May 2025 | 18 May 2025 | ⬜️ |
+| 3️⃣ | Intro to CNN & Hands-on from Paper | [Go to Week 3](#-week-3-introduction-to-cnn--hands-on-from-scratch-using-paper-aprilmay) | [📂 Week 3](/weeks/week-3/) | 29 April 2025 | 04 May 2025 | ✅ |
+| 4️⃣ | Deep Dive CNN & Case Study | [Go to Week 4](#-week-4-deep-dive-with-cnn-and-case-study-may) | [📂 Week 4](/weeks/week-4/) | 06 May 2025 | 11 May 2025 | ✅ |
+| 5️⃣ | Create Dataset & Use Open Source Dataset | [Go to Week 5](#-week-5-how-to-create-a-dataset--using-secondary-data-may) | [📂 Week 5](/weeks/week-5/) | 13 May 2025 | 18 May 2025 | ⬜️ |
 | 6️⃣ | YOLOv5 / YOLOv8 Introduction | [Go to Week 6](#-week-6-introduction-to-yolov5--yolov8-may--june) | [📂 Week 6](./Week_6/) | 20 May 2025 | 25 May 2025 | ⬜️ |
 | 7️⃣ | Deep Dive YOLOv5 / YOLOv8 | [Go to Week 7](#-week-7-deep-dive-with-yolov5--yolov8-june) | [📂 Week 7](./Week_7/) | 27 May 2025 | 01 June 2025 | ⬜️ |
 | 8️⃣ | Learn ROS 2 & Integration with YOLO | [Go to Week 8](#-week-8-learn-ros-2-with-motion-amarine) | [📂 Week 8](./Week_8/) | 17 June 2025 | 22 June 2025 | ⬜️ |
