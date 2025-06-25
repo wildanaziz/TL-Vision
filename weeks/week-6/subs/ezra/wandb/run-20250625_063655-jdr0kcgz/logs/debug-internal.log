@@ -1,0 +1,15 @@
+{"time":"2025-06-25T06:36:56.1304689+07:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"D:\\TL-Vision\\weeks\\week-6\\subs\\ezra\\wandb\\run-20250625_063655-jdr0kcgz\\logs\\debug-core.log"}
+{"time":"2025-06-25T06:36:56.5921456+07:00","level":"INFO","msg":"stream: created new stream","id":"jdr0kcgz"}
+{"time":"2025-06-25T06:36:56.5921456+07:00","level":"INFO","msg":"stream: started","id":"jdr0kcgz"}
+{"time":"2025-06-25T06:36:56.5921456+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"jdr0kcgz"}
+{"time":"2025-06-25T06:36:56.5921456+07:00","level":"INFO","msg":"handler: started","stream_id":"jdr0kcgz"}
+{"time":"2025-06-25T06:36:56.5921456+07:00","level":"INFO","msg":"sender: started","stream_id":"jdr0kcgz"}
+{"time":"2025-06-25T06:36:56.9371987+07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-25T06:36:57.3529717+07:00","level":"INFO","msg":"stream: closing","id":"jdr0kcgz"}
+{"time":"2025-06-25T06:36:57.3529717+07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-25T06:36:57.3529717+07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-25T06:36:59.0041096+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-25T06:36:59.3883872+07:00","level":"INFO","msg":"handler: closed","stream_id":"jdr0kcgz"}
+{"time":"2025-06-25T06:36:59.3883872+07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"jdr0kcgz"}
+{"time":"2025-06-25T06:36:59.3883872+07:00","level":"INFO","msg":"sender: closed","stream_id":"jdr0kcgz"}
+{"time":"2025-06-25T06:36:59.3883872+07:00","level":"INFO","msg":"stream: closed","id":"jdr0kcgz"}

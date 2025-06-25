@@ -1,0 +1,33 @@
+PRO TIP  Replace 'model=yolov5s.pt' with new 'model=yolov5su.pt'.
+YOLOv5 'u' models are trained with https://github.com/ultralytics/ultralytics and feature improved performance vs standard YOLOv5 models trained with https://github.com/ultralytics/yolov5.
+
+Downloading https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov5su.pt to 'yolov5su.pt'...
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 17.7M/17.7M [00:08<00:00, 2.30MB/s]
+New https://pypi.org/project/ultralytics/8.3.159 available  Update with 'pip install -U ultralytics'
+Ultralytics 8.3.158  Python-3.11.11 torch-2.7.1+cu118 CUDA:0 (NVIDIA GeForce RTX 2060 with Max-Q Design, 6144MiB)
+[34m[1mengine\trainer: [0magnostic_nms=False, amp=True, augment=False, auto_augment=randaugment, batch=16, bgr=0.0, box=7.5, cache=False, cfg=None, classes=None, close_mosaic=10, cls=0.5, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=data.yaml, degrees=0.0, deterministic=True, device=None, dfl=1.5, dnn=False, dropout=0.0, dynamic=False, embed=None, epochs=100, erasing=0.4, exist_ok=False, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, half=False, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, imgsz=640, int8=False, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.01, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=yolov5s.pt, momentum=0.937, mosaic=1.0, multi_scale=False, name=train6, nbs=64, nms=False, opset=None, optimize=False, optimizer=auto, overlap_mask=True, patience=100, perspective=0.0, plots=True, pose=12.0, pretrained=True, profile=False, project=None, rect=False, resume=False, retina_masks=False, save=True, save_conf=False, save_crop=False, save_dir=runs\detect\train6, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=0, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=botsort.yaml, translate=0.1, val=True, verbose=True, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=2, workspace=None
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\engine\trainer.py", line 607, in get_dataset
+    data = check_det_dataset(self.args.data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\data\utils.py", line 401, in check_det_dataset
+    file = check_file(dataset)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\utils\checks.py", line 568, in check_file
+    raise FileNotFoundError(f"'{file}' does not exist")
+FileNotFoundError: 'data.yaml' does not exist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\TL-Vision\weeks\week-6\subs\ezra\yolo-wandb.py", line 17, in <module>
+    model_v5.train(data=data_path, epochs=100, imgsz=640, workers=2)
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\engine\model.py", line 791, in train
+    self.trainer = (trainer or self._smart_load("trainer"))(overrides=args, _callbacks=self.callbacks)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\engine\trainer.py", line 153, in __init__
+    self.data = self.get_dataset()
+                ^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\engine\trainer.py", line 611, in get_dataset
+    raise RuntimeError(emojis(f"Dataset '{clean_url(self.args.data)}' error ❌ {e}")) from e
+RuntimeError: Dataset 'data.yaml' error  'data.yaml' does not exist

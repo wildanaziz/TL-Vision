@@ -1,0 +1,43 @@
+{
+  "os":  "Windows-10-10.0.22631-SP0",
+  "python":  "CPython 3.11.11",
+  "startedAt":  "2025-06-24T23:34:11.276194Z",
+  "program":  "D:\\TL-Vision\\weeks\\week-6\\subs\\ezra\\yolo-wandb.py",
+  "codePath":  "weeks\\week-6\\subs\\ezra\\yolo-wandb.py",
+  "git":  {
+    "remote":  "https://github.com/ezra1702/TL-Vision.git",
+    "commit":  "f820f05fe0a80f419e0229d440c02cb6dc7e46d5"
+  },
+  "email":  "ezranewbie17@gmail.com",
+  "root":  "D:\\TL-Vision\\weeks\\week-6\\subs\\ezra",
+  "host":  "DESKTOP-N248HCQ",
+  "executable":  "D:\\Anaconda\\envs\\vision\\python.exe",
+  "codePathLocal":  "yolo-wandb.py",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "gpu":  "NVIDIA GeForce RTX 2060 with Max-Q Design",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "293600227328",
+      "used":  "193836490752"
+    }
+  },
+  "memory":  {
+    "total":  "34124976128"
+  },
+  "cpu":  {
+    "count":  4,
+    "countLogical":  8
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 2060 with Max-Q Design",
+      "memoryTotal":  "6442450944",
+      "cudaCores":  1920,
+      "architecture":  "Turing",
+      "uuid":  "GPU-b897074c-cc2d-5841-7983-f229cae3a03a"
+    }
+  ],
+  "cudaVersion":  "12.6"
+}
