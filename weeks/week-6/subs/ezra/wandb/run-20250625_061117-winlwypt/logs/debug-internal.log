@@ -1,0 +1,10 @@
+{"time":"2025-06-25T06:11:17.3971887+07:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"D:\\TL-Vision\\weeks\\week-6\\subs\\ezra\\wandb\\run-20250625_061117-winlwypt\\logs\\debug-core.log"}
+{"time":"2025-06-25T06:11:17.7276995+07:00","level":"INFO","msg":"stream: created new stream","id":"winlwypt"}
+{"time":"2025-06-25T06:11:17.7282191+07:00","level":"INFO","msg":"stream: started","id":"winlwypt"}
+{"time":"2025-06-25T06:11:17.7283226+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"winlwypt"}
+{"time":"2025-06-25T06:11:17.7283226+07:00","level":"INFO","msg":"sender: started","stream_id":"winlwypt"}
+{"time":"2025-06-25T06:11:17.7283226+07:00","level":"INFO","msg":"handler: started","stream_id":"winlwypt"}
+{"time":"2025-06-25T06:11:18.0828716+07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-25T06:11:33.0965924+07:00","level":"ERROR","msg":"monitor: error sampling metrics: couldn't find pid: 17184"}
+{"time":"2025-06-25T06:11:48.0948412+07:00","level":"ERROR","msg":"monitor: error sampling metrics: couldn't find pid: 17184"}
+{"time":"2025-06-25T06:12:03.1072389+07:00","level":"ERROR","msg":"monitor: error sampling metrics: couldn't find pid: 17184"}

@@ -1,0 +1,16 @@
+{"time":"2025-06-25T08:58:05.1864663+07:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"D:\\TL-Vision\\weeks\\week-6\\subs\\ezra\\wandb\\run-20250625_085805-vc86ruzy\\logs\\debug-core.log"}
+{"time":"2025-06-25T08:58:05.6311316+07:00","level":"INFO","msg":"stream: created new stream","id":"vc86ruzy"}
+{"time":"2025-06-25T08:58:05.6311316+07:00","level":"INFO","msg":"stream: started","id":"vc86ruzy"}
+{"time":"2025-06-25T08:58:05.6311316+07:00","level":"INFO","msg":"handler: started","stream_id":"vc86ruzy"}
+{"time":"2025-06-25T08:58:05.6316126+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"vc86ruzy"}
+{"time":"2025-06-25T08:58:05.6316126+07:00","level":"INFO","msg":"sender: started","stream_id":"vc86ruzy"}
+{"time":"2025-06-25T08:58:06.0324997+07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-25T08:58:20.2556518+07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-25T08:58:20.2556518+07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-25T08:58:21.2597467+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media\\images\\YOLOv8 After Export_5_d380642e8f00a97483e7.png","runtime_seconds":1.0197351,"progress":"400.3KB/400.3KB"},{"desc":"uploading media\\images\\YOLOv8 After Export_6_d602624840cdcd896f68.png","runtime_seconds":0.9415537,"progress":"395.0KB/395.0KB"},{"desc":"uploading media\\images\\YOLOv8 After Export_7_14bf0b46b4b75897cd33.png","runtime_seconds":0.8702036,"progress":"406.7KB/406.7KB"},{"desc":"uploading media\\images\\YOLOv8 After Export_8_87a87983c6c97e78a27a.png","runtime_seconds":0.7939108,"progress":"397.2KB/397.2KB"},{"desc":"uploading media\\images\\YOLOv8 After Export_9_530bbd5b74cd9103f30c.png","runtime_seconds":0.7038914,"progress":"424.7KB/424.7KB"},{"desc":"uploading config.yaml","runtime_seconds":0.3849202,"progress":"442B/442B"}],"total_operations":6}}
+{"time":"2025-06-25T08:58:21.9672259+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-25T08:58:22.7863595+07:00","level":"INFO","msg":"stream: closing","id":"vc86ruzy"}
+{"time":"2025-06-25T08:58:22.7863595+07:00","level":"INFO","msg":"handler: closed","stream_id":"vc86ruzy"}
+{"time":"2025-06-25T08:58:22.7863595+07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vc86ruzy"}
+{"time":"2025-06-25T08:58:22.788554+07:00","level":"INFO","msg":"sender: closed","stream_id":"vc86ruzy"}
+{"time":"2025-06-25T08:58:22.7900548+07:00","level":"INFO","msg":"stream: closed","id":"vc86ruzy"}
