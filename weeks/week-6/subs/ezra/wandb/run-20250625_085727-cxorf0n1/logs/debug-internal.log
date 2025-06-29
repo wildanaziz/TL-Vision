@@ -1,0 +1,16 @@
+{"time":"2025-06-25T08:57:28.7737557+07:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"D:\\TL-Vision\\weeks\\week-6\\subs\\ezra\\wandb\\run-20250625_085727-cxorf0n1\\logs\\debug-core.log"}
+{"time":"2025-06-25T08:57:30.3117306+07:00","level":"INFO","msg":"stream: created new stream","id":"cxorf0n1"}
+{"time":"2025-06-25T08:57:30.312452+07:00","level":"INFO","msg":"sender: started","stream_id":"cxorf0n1"}
+{"time":"2025-06-25T08:57:30.312452+07:00","level":"INFO","msg":"handler: started","stream_id":"cxorf0n1"}
+{"time":"2025-06-25T08:57:30.312452+07:00","level":"INFO","msg":"stream: started","id":"cxorf0n1"}
+{"time":"2025-06-25T08:57:30.312452+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"cxorf0n1"}
+{"time":"2025-06-25T08:57:30.7675325+07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-25T08:58:02.9677998+07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-25T08:58:02.9677998+07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-25T08:58:03.9770987+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media\\images\\YOLOv5 After Export_5_6f312ccd2835fdfcffda.png","runtime_seconds":1.0491412,"progress":"399.9KB/399.9KB"},{"desc":"uploading media\\images\\YOLOv5 After Export_6_d38d6d16ae3246b99161.png","runtime_seconds":0.9692011,"progress":"394.6KB/394.6KB"},{"desc":"uploading media\\images\\YOLOv5 After Export_7_6d50a6302d90d12256d5.png","runtime_seconds":0.8789609,"progress":"406.6KB/406.6KB"},{"desc":"uploading media\\images\\YOLOv5 After Export_8_5083766f1ae4bd30bde3.png","runtime_seconds":0.7983008,"progress":"397.2KB/397.2KB"},{"desc":"uploading media\\images\\YOLOv5 After Export_9_0d11978086fe85b821d5.png","runtime_seconds":0.7124505,"progress":"424.6KB/424.6KB"},{"desc":"uploading config.yaml","runtime_seconds":0.297173,"progress":"421B/421B"}],"total_operations":6}}
+{"time":"2025-06-25T08:58:04.8003067+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-25T08:58:05.171375+07:00","level":"INFO","msg":"stream: closing","id":"cxorf0n1"}
+{"time":"2025-06-25T08:58:05.171375+07:00","level":"INFO","msg":"handler: closed","stream_id":"cxorf0n1"}
+{"time":"2025-06-25T08:58:05.171375+07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"cxorf0n1"}
+{"time":"2025-06-25T08:58:05.171375+07:00","level":"INFO","msg":"sender: closed","stream_id":"cxorf0n1"}
+{"time":"2025-06-25T08:58:05.171375+07:00","level":"INFO","msg":"stream: closed","id":"cxorf0n1"}

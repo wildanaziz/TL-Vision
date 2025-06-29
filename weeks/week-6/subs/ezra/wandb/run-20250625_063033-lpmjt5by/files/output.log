@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "D:\TL-Vision\weeks\week-6\subs\ezra\yolo-wandb.py", line 37, in <module>
+    export_and_predict_only()
+  File "D:\TL-Vision\weeks\week-6\subs\ezra\yolo-wandb.py", line 12, in export_and_predict_only
+    model_v5 = YOLO("runs/train/YOLOv5s/weights/best.pt")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\models\yolo\model.py", line 79, in __init__
+    super().__init__(model=model, task=task, verbose=verbose)
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\engine\model.py", line 151, in __init__
+    self._load(model, task=task)
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\engine\model.py", line 295, in _load
+    self.model, self.ckpt = attempt_load_one_weight(weights)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\nn\tasks.py", line 1548, in attempt_load_one_weight
+    ckpt, weight = torch_safe_load(weight)  # load ckpt
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\nn\tasks.py", line 1446, in torch_safe_load
+    ckpt = torch.load(file, map_location="cpu")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\utils\patches.py", line 119, in torch_load
+    return _torch_load(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\vision\Lib\site-packages\torch\serialization.py", line 1479, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\vision\Lib\site-packages\torch\serialization.py", line 759, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\vision\Lib\site-packages\torch\serialization.py", line 740, in __init__
+    super().__init__(open(name, mode))
+                     ^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'runs\\train\\YOLOv5s\\weights\\best.pt'

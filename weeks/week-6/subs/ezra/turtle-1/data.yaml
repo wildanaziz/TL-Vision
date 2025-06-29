@@ -1,0 +1,12 @@
+names:
+- turtle
+nc: 1
+roboflow:
+  license: CC BY 4.0
+  project: turtle-ymyld
+  url: https://universe.roboflow.com/visionamarine/turtle-ymyld/dataset/1
+  version: 1
+  workspace: visionamarine
+test: ../test/images
+train: ../train/images
+val: ../valid/images
