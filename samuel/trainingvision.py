@@ -3,8 +3,8 @@ from ultralytics import YOLO
 from wandb.integration.ultralytics import add_wandb_callback
 import os
 from roboflow import Roboflow
-
-model= YOLO (r"F:\FILKOM\robotiik\TL-Vison2\yolo11n.pt")
+    
+model= YOLO ("yolov8n.pt")
 
 
 wandb.init(
@@ -31,6 +31,8 @@ try:
         epochs=10,
         imgsz=640,
     )
+    best_model_path = os.path.join("runs", "detect", "train", "weights", "best.pt")
+
     model.val()
 
 except Exception as e:
