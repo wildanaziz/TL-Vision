@@ -1,0 +1,16 @@
+{"time":"2025-06-25T09:05:16.5124667+07:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"D:\\TL-Vision\\weeks\\week-6\\subs\\ezra\\wandb\\run-20250625_090516-j3snkd95\\logs\\debug-core.log"}
+{"time":"2025-06-25T09:05:17.3462762+07:00","level":"INFO","msg":"stream: created new stream","id":"j3snkd95"}
+{"time":"2025-06-25T09:05:17.3462762+07:00","level":"INFO","msg":"stream: started","id":"j3snkd95"}
+{"time":"2025-06-25T09:05:17.3462762+07:00","level":"INFO","msg":"handler: started","stream_id":"j3snkd95"}
+{"time":"2025-06-25T09:05:17.3462762+07:00","level":"INFO","msg":"sender: started","stream_id":"j3snkd95"}
+{"time":"2025-06-25T09:05:17.3468097+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"j3snkd95"}
+{"time":"2025-06-25T09:05:17.7732746+07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-25T09:05:39.9042506+07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-25T09:05:39.9042506+07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-25T09:05:40.9116186+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media\\images\\YOLOv5 After Export_5_6f312ccd2835fdfcffda.png","runtime_seconds":1.2082185,"progress":"399.9KB/399.9KB"},{"desc":"uploading media\\images\\YOLOv5 After Export_6_d38d6d16ae3246b99161.png","runtime_seconds":1.1136121,"progress":"394.6KB/394.6KB"},{"desc":"uploading media\\images\\YOLOv5 After Export_7_6d50a6302d90d12256d5.png","runtime_seconds":0.9805627,"progress":"406.6KB/406.6KB"},{"desc":"uploading media\\images\\YOLOv5 After Export_8_5083766f1ae4bd30bde3.png","runtime_seconds":0.8422285,"progress":"397.2KB/397.2KB"},{"desc":"uploading media\\images\\YOLOv5 After Export_9_0d11978086fe85b821d5.png","runtime_seconds":0.716192,"progress":"424.6KB/424.6KB"}],"total_operations":5}}
+{"time":"2025-06-25T09:05:41.6840723+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-25T09:05:42.063358+07:00","level":"INFO","msg":"stream: closing","id":"j3snkd95"}
+{"time":"2025-06-25T09:05:42.063358+07:00","level":"INFO","msg":"handler: closed","stream_id":"j3snkd95"}
+{"time":"2025-06-25T09:05:42.063358+07:00","level":"INFO","msg":"sender: closed","stream_id":"j3snkd95"}
+{"time":"2025-06-25T09:05:42.063358+07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"j3snkd95"}
+{"time":"2025-06-25T09:05:42.0647855+07:00","level":"INFO","msg":"stream: closed","id":"j3snkd95"}

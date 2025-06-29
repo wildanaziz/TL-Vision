@@ -1,0 +1,64 @@
+
+image 1/5 D:\TL-Vision\weeks\week-6\subs\ezra\turtle-1\valid\images\turtle-2_mp4-0002_jpg.rf.1f76ecac5de5185ea8bc79d0550fbba0.jpg: 640x640 (no detections), 9.5ms
+image 2/5 D:\TL-Vision\weeks\week-6\subs\ezra\turtle-1\valid\images\turtle-2_mp4-0008_jpg.rf.817cc8309e5c4c1ec715864664096212.jpg: 640x640 (no detections), 9.7ms
+image 3/5 D:\TL-Vision\weeks\week-6\subs\ezra\turtle-1\valid\images\turtle-2_mp4-0009_jpg.rf.814b17520e50131fcdc4faaf1662d53b.jpg: 640x640 (no detections), 11.6ms
+image 4/5 D:\TL-Vision\weeks\week-6\subs\ezra\turtle-1\valid\images\turtle-2_mp4-0017_jpg.rf.843baba79d60944a8cb149bf3e4b8f9d.jpg: 640x640 (no detections), 11.1ms
+image 5/5 D:\TL-Vision\weeks\week-6\subs\ezra\turtle-1\valid\images\turtle-2_mp4-0028_jpg.rf.5f6e6102d5d1488663af396383457b72.jpg: 640x640 (no detections), 8.9ms
+Speed: 2.7ms preprocess, 10.2ms inference, 3.1ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns\detect\pred_yolov5_before2[0m
+Traceback (most recent call last):
+  File "D:\TL-Vision\weeks\week-6\subs\ezra\yolo-wandb.py", line 37, in <module>
+    export_and_predict_only()
+  File "D:\TL-Vision\weeks\week-6\subs\ezra\yolo-wandb.py", line 15, in export_and_predict_only
+    openvino_v5_path = model_v5.export(format="openvino", path="yolov5s_openvino")
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\engine\model.py", line 734, in export
+    return Exporter(overrides=args, _callbacks=self.callbacks)(model=self.model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\engine\exporter.py", line 262, in __init__
+    self.args = get_cfg(cfg, overrides)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\cfg\__init__.py", line 305, in get_cfg
+    check_dict_alignment(cfg, overrides)
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\cfg\__init__.py", line 498, in check_dict_alignment
+    raise SyntaxError(string + CLI_HELP_MSG) from e
+SyntaxError: '[31m[1mpath[0m' is not a valid YOLO argument. Similar arguments are i.e. ['batch=16'].
+
+    Arguments received: ['yolo']. Ultralytics 'yolo' commands use the following syntax:
+
+        yolo TASK MODE ARGS
+
+        Where   TASK (optional) is one of ['classify', 'pose', 'obb', 'segment', 'detect']
+                MODE (required) is one of ['predict', 'val', 'track', 'benchmark', 'export', 'train']
+                ARGS (optional) are any number of custom 'arg=value' pairs like 'imgsz=320' that override defaults.
+                    See all ARGS at https://docs.ultralytics.com/usage/cfg or with 'yolo cfg'
+
+    1. Train a detection model for 10 epochs with an initial learning_rate of 0.01
+        yolo train data=coco8.yaml model=yolo11n.pt epochs=10 lr0=0.01
+
+    2. Predict a YouTube video using a pretrained segmentation model at image size 320:
+        yolo predict model=yolo11n-seg.pt source='https://youtu.be/LNwODJXcvt4' imgsz=320
+
+    3. Val a pretrained detection model at batch-size 1 and image size 640:
+        yolo val model=yolo11n.pt data=coco8.yaml batch=1 imgsz=640
+
+    4. Export a YOLO11n classification model to ONNX format at image size 224 by 128 (no TASK required)
+        yolo export model=yolo11n-cls.pt format=onnx imgsz=224,128
+
+    5. Ultralytics solutions usage
+        yolo solutions count or in ['crop', 'blur', 'workout', 'heatmap', 'isegment', 'visioneye', 'speed', 'queue', 'analytics', 'inference', 'trackzone'] source="path/to/video.mp4"
+
+    6. Run special commands:
+        yolo help
+        yolo checks
+        yolo version
+        yolo settings
+        yolo copy-cfg
+        yolo cfg
+        yolo solutions help
+
+    Docs: https://docs.ultralytics.com
+    Solutions: https://docs.ultralytics.com/solutions/
+    Community: https://community.ultralytics.com
+    GitHub: https://github.com/ultralytics/ultralytics
+

@@ -1,0 +1,42 @@
+PRO TIP  Replace 'model=yolov5s.pt' with new 'model=yolov5su.pt'.
+YOLOv5 'u' models are trained with https://github.com/ultralytics/ultralytics and feature improved performance vs standard YOLOv5 models trained with https://github.com/ultralytics/yolov5.
+
+New https://pypi.org/project/ultralytics/8.3.159 available  Update with 'pip install -U ultralytics'
+Ultralytics 8.3.158  Python-3.11.11 torch-2.7.1+cu118 CUDA:0 (NVIDIA GeForce RTX 2060 with Max-Q Design, 6144MiB)
+[34m[1mengine\trainer: [0magnostic_nms=False, amp=True, augment=False, auto_augment=randaugment, batch=16, bgr=0.0, box=7.5, cache=False, cfg=None, classes=None, close_mosaic=10, cls=0.5, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=D:\TL-Vision\weeks\week-6\subs\ezra\turtle-1\data.yaml, degrees=0.0, deterministic=True, device=None, dfl=1.5, dnn=False, dropout=0.0, dynamic=False, embed=None, epochs=100, erasing=0.4, exist_ok=False, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, half=False, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, imgsz=640, int8=False, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.01, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=yolov5s.pt, momentum=0.937, mosaic=1.0, multi_scale=False, name=train7, nbs=64, nms=False, opset=None, optimize=False, optimizer=auto, overlap_mask=True, patience=100, perspective=0.0, plots=True, pose=12.0, pretrained=True, profile=False, project=None, rect=False, resume=False, retina_masks=False, save=True, save_conf=False, save_crop=False, save_dir=runs\detect\train7, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=0, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=botsort.yaml, translate=0.1, val=True, verbose=True, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=2, workspace=None
+Overriding model.yaml nc=80 with nc=1
+
+                   from  n    params  module                                       arguments
+  0                  -1  1      3520  ultralytics.nn.modules.conv.Conv             [3, 32, 6, 2, 2]
+  1                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]
+  2                  -1  1     18816  ultralytics.nn.modules.block.C3              [64, 64, 1]
+  3                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]
+  4                  -1  2    115712  ultralytics.nn.modules.block.C3              [128, 128, 2]
+  5                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]
+  6                  -1  3    625152  ultralytics.nn.modules.block.C3              [256, 256, 3]
+  7                  -1  1   1180672  ultralytics.nn.modules.conv.Conv             [256, 512, 3, 2]
+  8                  -1  1   1182720  ultralytics.nn.modules.block.C3              [512, 512, 1]
+  9                  -1  1    656896  ultralytics.nn.modules.block.SPPF            [512, 512, 5]
+ 10                  -1  1    131584  ultralytics.nn.modules.conv.Conv             [512, 256, 1, 1]
+ 11                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 12             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 13                  -1  1    361984  ultralytics.nn.modules.block.C3              [512, 256, 1, False]
+ 14                  -1  1     33024  ultralytics.nn.modules.conv.Conv             [256, 128, 1, 1]
+ 15                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 16             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 17                  -1  1     90880  ultralytics.nn.modules.block.C3              [256, 128, 1, False]
+ 18                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]
+ 19            [-1, 14]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 20                  -1  1    296448  ultralytics.nn.modules.block.C3              [256, 256, 1, False]
+ 21                  -1  1    590336  ultralytics.nn.modules.conv.Conv             [256, 256, 3, 2]
+ 22            [-1, 10]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 23                  -1  1   1182720  ultralytics.nn.modules.block.C3              [512, 512, 1, False]
+ 24        [17, 20, 23]  1   2116435  ultralytics.nn.modules.head.Detect           [1, [128, 256, 512]]
+YOLOv5s summary: 153 layers, 9,122,579 parameters, 9,122,563 gradients, 24.0 GFLOPs
+
+Transferred 421/427 items from pretrained weights
+Freezing layer 'model.24.dfl.conv.weight'
+[34m[1mAMP: [0mrunning Automatic Mixed Precision (AMP) checks...
+[34m[1mAMP: [0mchecks passed
+[34m[1mtrain: [0mFast image access  (ping: 0.00.0 ms, read: 658.1141.7 MB/s, size: 59.4 KB)
+[34m[1mtrain: [0mScanning D:\TL-Vision\weeks\week-6\subs\ezra\turtle-1\train\labels.cache... 60 images, 0 backgrounds, 0 corrupt: 100%|██████████| 60/60 [00:00<?, ?it/s][0m

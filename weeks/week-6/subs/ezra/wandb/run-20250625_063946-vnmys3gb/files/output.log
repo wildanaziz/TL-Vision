@@ -1,0 +1,38 @@
+
+image 1/5 D:\TL-Vision\weeks\week-6\subs\ezra\turtle-1\valid\images\turtle-2_mp4-0002_jpg.rf.1f76ecac5de5185ea8bc79d0550fbba0.jpg: 640x640 (no detections), 34.2ms
+image 2/5 D:\TL-Vision\weeks\week-6\subs\ezra\turtle-1\valid\images\turtle-2_mp4-0008_jpg.rf.817cc8309e5c4c1ec715864664096212.jpg: 640x640 (no detections), 46.9ms
+image 3/5 D:\TL-Vision\weeks\week-6\subs\ezra\turtle-1\valid\images\turtle-2_mp4-0009_jpg.rf.814b17520e50131fcdc4faaf1662d53b.jpg: 640x640 (no detections), 48.4ms
+image 4/5 D:\TL-Vision\weeks\week-6\subs\ezra\turtle-1\valid\images\turtle-2_mp4-0017_jpg.rf.843baba79d60944a8cb149bf3e4b8f9d.jpg: 640x640 (no detections), 44.7ms
+image 5/5 D:\TL-Vision\weeks\week-6\subs\ezra\turtle-1\valid\images\turtle-2_mp4-0028_jpg.rf.5f6e6102d5d1488663af396383457b72.jpg: 640x640 (no detections), 24.9ms
+Speed: 5.5ms preprocess, 39.8ms inference, 1.7ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1mruns\detect\pred_yolov8_before[0m
+Ultralytics 8.3.158  Python-3.11.11 torch-2.7.1+cu118 CPU (Intel Core(TM) i5-10300H 2.50GHz)
+
+[34m[1mPyTorch:[0m starting from 'D:\TL-Vision\weeks\week-6\subs\ezra\runs\detect\train\weights\best.pt' with input shape (1, 3, 640, 640) BCHW and output shape(s) (1, 5, 8400) (17.6 MB)
+
+[34m[1mOpenVINO:[0m starting export with openvino 2025.2.0-19140-c01cd93e24d-releases/2025/2...
+ERROR [34m[1mOpenVINO:[0m export failure 4.4s: Check 'bin_file' failed at src\core\src\pass\serialize.cpp:1331:
+Can't open bin file: ""D:\\TL-Vision\\weeks\\week-6\\subs\\ezra\\runs\\detect\\train\\weights\\best_openvino_model\\best.bin""
+Traceback (most recent call last):
+  File "D:\TL-Vision\weeks\week-6\subs\ezra\yolo-wandb.py", line 43, in <module>
+    export_and_predict_only()
+  File "D:\TL-Vision\weeks\week-6\subs\ezra\yolo-wandb.py", line 34, in export_and_predict_only
+    export_v8_dir = model_v8.export(format="openvino")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\engine\model.py", line 734, in export
+    return Exporter(overrides=args, _callbacks=self.callbacks)(model=self.model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\engine\exporter.py", line 481, in __call__
+    f[3], _ = self.export_openvino()
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\engine\exporter.py", line 197, in outer_func
+    raise e
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\engine\exporter.py", line 192, in outer_func
+    f, model = inner_func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\engine\exporter.py", line 702, in export_openvino
+    serialize(ov_model, f_ov)
+  File "D:\Anaconda\envs\vision\Lib\site-packages\ultralytics\engine\exporter.py", line 656, in serialize
+    ov.save_model(ov_model, file, compress_to_fp16=self.args.half)
+RuntimeError: Check 'bin_file' failed at src\core\src\pass\serialize.cpp:1331:
+Can't open bin file: ""D:\\TL-Vision\\weeks\\week-6\\subs\\ezra\\runs\\detect\\train\\weights\\best_openvino_model\\best.bin""

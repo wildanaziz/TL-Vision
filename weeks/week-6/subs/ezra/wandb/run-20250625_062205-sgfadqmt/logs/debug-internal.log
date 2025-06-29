@@ -1,0 +1,16 @@
+{"time":"2025-06-25T06:22:05.3761219+07:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"D:\\TL-Vision\\weeks\\week-6\\subs\\ezra\\wandb\\run-20250625_062205-sgfadqmt\\logs\\debug-core.log"}
+{"time":"2025-06-25T06:22:06.1378223+07:00","level":"INFO","msg":"stream: created new stream","id":"sgfadqmt"}
+{"time":"2025-06-25T06:22:06.1380906+07:00","level":"INFO","msg":"stream: started","id":"sgfadqmt"}
+{"time":"2025-06-25T06:22:06.1380906+07:00","level":"INFO","msg":"handler: started","stream_id":"sgfadqmt"}
+{"time":"2025-06-25T06:22:06.1380906+07:00","level":"INFO","msg":"sender: started","stream_id":"sgfadqmt"}
+{"time":"2025-06-25T06:22:06.1380906+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"sgfadqmt"}
+{"time":"2025-06-25T06:22:06.561232+07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-25T06:27:28.393288+07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-25T06:27:28.393288+07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-25T06:27:29.4091482+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.6808217,"progress":"52.5KB/52.5KB"},{"desc":"uploading config.yaml","runtime_seconds":0.4065019,"progress":"421B/421B"}],"total_operations":2}}
+{"time":"2025-06-25T06:27:30.1597171+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-25T06:27:30.5441345+07:00","level":"INFO","msg":"stream: closing","id":"sgfadqmt"}
+{"time":"2025-06-25T06:27:30.5441345+07:00","level":"INFO","msg":"handler: closed","stream_id":"sgfadqmt"}
+{"time":"2025-06-25T06:27:30.5441345+07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"sgfadqmt"}
+{"time":"2025-06-25T06:27:30.5441345+07:00","level":"INFO","msg":"sender: closed","stream_id":"sgfadqmt"}
+{"time":"2025-06-25T06:27:30.5441345+07:00","level":"INFO","msg":"stream: closed","id":"sgfadqmt"}

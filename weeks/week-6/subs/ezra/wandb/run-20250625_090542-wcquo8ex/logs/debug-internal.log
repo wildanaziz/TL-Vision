@@ -1,0 +1,16 @@
+{"time":"2025-06-25T09:05:42.0827243+07:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"D:\\TL-Vision\\weeks\\week-6\\subs\\ezra\\wandb\\run-20250625_090542-wcquo8ex\\logs\\debug-core.log"}
+{"time":"2025-06-25T09:05:42.5751412+07:00","level":"INFO","msg":"stream: created new stream","id":"wcquo8ex"}
+{"time":"2025-06-25T09:05:42.5751412+07:00","level":"INFO","msg":"stream: started","id":"wcquo8ex"}
+{"time":"2025-06-25T09:05:42.5751412+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"wcquo8ex"}
+{"time":"2025-06-25T09:05:42.5751412+07:00","level":"INFO","msg":"sender: started","stream_id":"wcquo8ex"}
+{"time":"2025-06-25T09:05:42.5756898+07:00","level":"INFO","msg":"handler: started","stream_id":"wcquo8ex"}
+{"time":"2025-06-25T09:05:43.0522899+07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-25T09:05:57.5764108+07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-25T09:05:57.5764108+07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-25T09:05:58.5877782+07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media\\images\\YOLOv8 After Export_5_d380642e8f00a97483e7.png","runtime_seconds":1.0087262,"progress":"400.3KB/400.3KB"},{"desc":"uploading media\\images\\YOLOv8 After Export_6_d602624840cdcd896f68.png","runtime_seconds":0.9247686,"progress":"395.0KB/395.0KB"},{"desc":"uploading media\\images\\YOLOv8 After Export_7_14bf0b46b4b75897cd33.png","runtime_seconds":0.8525706,"progress":"406.7KB/406.7KB"},{"desc":"uploading media\\images\\YOLOv8 After Export_8_87a87983c6c97e78a27a.png","runtime_seconds":0.7686136,"progress":"397.2KB/397.2KB"},{"desc":"uploading media\\images\\YOLOv8 After Export_9_530bbd5b74cd9103f30c.png","runtime_seconds":0.6862291,"progress":"424.7KB/424.7KB"}],"total_operations":5}}
+{"time":"2025-06-25T09:05:59.430819+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-25T09:05:59.7983778+07:00","level":"INFO","msg":"stream: closing","id":"wcquo8ex"}
+{"time":"2025-06-25T09:05:59.7983778+07:00","level":"INFO","msg":"handler: closed","stream_id":"wcquo8ex"}
+{"time":"2025-06-25T09:05:59.7983778+07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"wcquo8ex"}
+{"time":"2025-06-25T09:05:59.7983778+07:00","level":"INFO","msg":"sender: closed","stream_id":"wcquo8ex"}
+{"time":"2025-06-25T09:05:59.7983778+07:00","level":"INFO","msg":"stream: closed","id":"wcquo8ex"}
