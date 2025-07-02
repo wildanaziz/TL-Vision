@@ -1,0 +1,15 @@
+{"time":"2025-06-25T06:34:11.2778338+07:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"D:\\TL-Vision\\weeks\\week-6\\subs\\ezra\\wandb\\run-20250625_063411-uoxfbfcu\\logs\\debug-core.log"}
+{"time":"2025-06-25T06:34:11.7395803+07:00","level":"INFO","msg":"stream: created new stream","id":"uoxfbfcu"}
+{"time":"2025-06-25T06:34:11.7395803+07:00","level":"INFO","msg":"stream: started","id":"uoxfbfcu"}
+{"time":"2025-06-25T06:34:11.7395803+07:00","level":"INFO","msg":"handler: started","stream_id":"uoxfbfcu"}
+{"time":"2025-06-25T06:34:11.7395803+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"uoxfbfcu"}
+{"time":"2025-06-25T06:34:11.7395803+07:00","level":"INFO","msg":"sender: started","stream_id":"uoxfbfcu"}
+{"time":"2025-06-25T06:34:12.1570222+07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-25T06:34:20.6466423+07:00","level":"INFO","msg":"stream: closing","id":"uoxfbfcu"}
+{"time":"2025-06-25T06:34:20.6466423+07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-25T06:34:20.6466423+07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-25T06:34:22.3217785+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-25T06:34:22.7602567+07:00","level":"INFO","msg":"sender: closed","stream_id":"uoxfbfcu"}
+{"time":"2025-06-25T06:34:22.7602567+07:00","level":"INFO","msg":"handler: closed","stream_id":"uoxfbfcu"}
+{"time":"2025-06-25T06:34:22.7602567+07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"uoxfbfcu"}
+{"time":"2025-06-25T06:34:22.7602567+07:00","level":"INFO","msg":"stream: closed","id":"uoxfbfcu"}
