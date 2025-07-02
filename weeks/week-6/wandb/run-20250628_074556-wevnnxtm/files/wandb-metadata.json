@@ -1,0 +1,43 @@
+{
+  "os":  "Windows-11-10.0.26100-SP0",
+  "python":  "CPython 3.13.2",
+  "startedAt":  "2025-06-28T00:45:56.992059Z",
+  "program":  "c:\\Users\\ACER\\.vscode\\TL-Vision\\weeks\\week-6\\export_predict_yolov8.py",
+  "codePath":  "weeks\\week-6\\export_predict_yolov8.py",
+  "git":  {
+    "remote":  "https://github.com/SYARIEFANWAR/TL-Vision.git",
+    "commit":  "e96fb78e0bdf83a0bbf3ae6f195d897a356db50d"
+  },
+  "email":  "syariefanwar@student.ub.ac.id",
+  "root":  "C:\\Users\\ACER\\.vscode\\TL-Vision\\weeks\\week-6",
+  "host":  "LAPTOP-QPKQ33JH",
+  "executable":  "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "codePathLocal":  "export_predict_yolov8.py",
+  "cpu_count":  8,
+  "cpu_count_logical":  12,
+  "gpu":  "NVIDIA GeForce RTX 2050",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "196172836864",
+      "used":  "193992318976"
+    }
+  },
+  "memory":  {
+    "total":  "8279416832"
+  },
+  "cpu":  {
+    "count":  8,
+    "countLogical":  12
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 2050",
+      "memoryTotal":  "4294967296",
+      "cudaCores":  2048,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-e2332a2f-3b97-0dd0-b859-61e39ab8e7c8"
+    }
+  ],
+  "cudaVersion":  "12.3"
+}

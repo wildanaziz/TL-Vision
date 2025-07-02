@@ -1,0 +1,49 @@
+=== Processing YOLOv5 ===
+Traceback (most recent call last):
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\ultralytics\nn\tasks.py", line 832, in torch_safe_load
+    ckpt = torch.load(file, map_location="cpu")
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\ultralytics\utils\patches.py", line 86, in torch_load
+    return _torch_load(*args, **kwargs)
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\serialization.py", line 1471, in load
+    return _load(
+        opened_zipfile,
+    ...<3 lines>...
+        **pickle_load_args,
+    )
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\serialization.py", line 1964, in _load
+    result = unpickler.load()
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\serialization.py", line 1953, in find_class
+    return super().find_class(mod_name, name)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'models'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\ACER\.vscode\TL-Vision\weeks\week-6\export_predict_yolov8.py", line 70, in <module>
+    main()
+    ~~~~^^
+  File "c:\Users\ACER\.vscode\TL-Vision\weeks\week-6\export_predict_yolov8.py", line 62, in main
+    export_and_predict_yolov5(sample_image, use_gpu)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ACER\.vscode\TL-Vision\weeks\week-6\export_predict_yolov8.py", line 17, in export_and_predict_yolov5
+    model_v5 = YOLO(r"C:\Users\ACER\.vscode\TL-Vision\weeks\week-6\yolov5s-result\weights\best.pt")
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\ultralytics\models\yolo\model.py", line 23, in __init__
+    super().__init__(model=model, task=task, verbose=verbose)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\ultralytics\engine\model.py", line 148, in __init__
+    self._load(model, task=task)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\ultralytics\engine\model.py", line 291, in _load
+    self.model, self.ckpt = attempt_load_one_weight(weights)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\ultralytics\nn\tasks.py", line 905, in attempt_load_one_weight
+    ckpt, weight = torch_safe_load(weight)  # load ckpt
+                   ~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\ultralytics\nn\tasks.py", line 836, in torch_safe_load
+    raise TypeError(
+    ...<7 lines>...
+    ) from e
+TypeError: ERROR  C:\Users\ACER\.vscode\TL-Vision\weeks\week-6\yolov5s-result\weights\best.pt appears to be an Ultralytics YOLOv5 model originally trained with https://github.com/ultralytics/yolov5.
+This model is NOT forwards compatible with YOLOv8 at https://github.com/ultralytics/ultralytics.
+Recommend fixes are to train a new model using the latest 'ultralytics' package or to run a command with an official Ultralytics model, i.e. 'yolo predict model=yolo11n.pt'

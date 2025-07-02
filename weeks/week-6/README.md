@@ -1,3 +1,39 @@
+syariefyolo
+# 📦 Week 6: YOLOv5 vs YOLOv8 + W&B Tracking
+
+## 🎯 Tujuan
+1. Benchmark performa YOLOv5 vs YOLOv8 pada deteksi **turtle**
+2. Tracking training menggunakan **Weights & Biases (W&B)**
+
+---
+
+## 🐢 YOLOv5 vs YOLOv8 - Turtle Detection
+
+### Dataset
+- Train: `turtle-1/train/images`
+- Valid: `turtle-1/valid/images`
+- Config: `turtle-1/data.yaml`
+
+### Hasil Evaluasi
+
+| Model   | Precision | Recall | mAP@0.5 | mAP@0.5:0.95 |
+|---------|-----------|--------|---------|--------------|
+| YOLOv5  | 0.0033    | 1.0    | 0.938   | 0.429        |
+| YOLOv8  | 0.991     | 1.0    | 0.995   | 0.975        |
+
+**Kesimpulan**: YOLOv8 lebih akurat, cepat, dan konsisten. Cocok untuk deployment real-world.
+
+---
+
+## 📈 Tracking Model dengan W&B
+
+### Setup
+1. Daftar & login di [wandb.ai](https://wandb.ai)
+2. Install:
+   ```bash
+   pip install wandb
+   wandb login
+
 # Week 6: Deep Dive into YOLOv5 and YOLOv8 and Track ur Model Result
 
 Pada minggu ke-6 kali ini, kita akan mengulik lebih dalam bersama-sama tentang YOLOv5 dan YOLOv8. Dimana pada week kali ini kita akan mencoba benchmarking, evaluasi model yang telah kita buat dan mencoba mencari tuning terbaik dari hasil tracking result model yang telah dilatih. So, buat para vision amarineers sebelum kita terjun bersama kita coba penuhi beberapa requirements yang dibutuhkan.
@@ -131,3 +167,4 @@ Nahh mungkin cukup sampe disini aja buat week kali ini pabila bingung bisa tanya
 [2] Ultralytics. (n.d.). Validation mode. Retrieved June 3, 2025, from https://docs.ultralytics.com/modes/val/  
 [3] Weight and Biases. (n.d.). Track Experiments. Retrieved June 3, 2025, from https://docs.wandb.ai/tutorials/experiments/  
 [4] Weight and Biases. (n.d.). YOLOv5 Integrations Guide. Retrieved June 3, 2025, from https://docs.wandb.ai/guides/integrations/yolov5/  
+main

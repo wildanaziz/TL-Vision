@@ -1,0 +1,20 @@
+description: Ultralytics best model trained on C:/Users/ACER/.vscode/TL-Vision/weeks/week-6/turtle-1/data.yaml
+author: Ultralytics
+date: '2025-07-02T10:20:08.048096'
+version: 8.3.78
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 416
+- 416
+names:
+  0: turtle
+args:
+  batch: 1
+  half: false
+  int8: false
+  dynamic: false
+  nms: false

@@ -1,0 +1,16 @@
+{
+  "os":  "Windows-11-10.0.26100-SP0",
+  "python":  "CPython 3.13.2",
+  "startedAt":  "2025-06-28T01:09:41.581651Z",
+  "program":  "c:\\Users\\ACER\\.vscode\\TL-Vision\\weeks\\week-6\\export_predict_yolov8.py",
+  "codePath":  "weeks\\week-6\\export_predict_yolov8.py",
+  "git":  {
+    "remote":  "https://github.com/SYARIEFANWAR/TL-Vision.git",
+    "commit":  "e96fb78e0bdf83a0bbf3ae6f195d897a356db50d"
+  },
+  "email":  "syariefanwar@student.ub.ac.id",
+  "root":  "C:\\Users\\ACER\\.vscode\\TL-Vision\\weeks\\week-6",
+  "host":  "LAPTOP-QPKQ33JH",
+  "executable":  "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "codePathLocal":  "export_predict_yolov8.py"
+}

@@ -1,0 +1,15 @@
+{"time":"2025-06-28T08:09:41.5864497+07:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"C:\\Users\\ACER\\.vscode\\TL-Vision\\weeks\\week-6\\wandb\\run-20250628_080941-jnkecdh8\\logs\\debug-core.log"}
+{"time":"2025-06-28T08:09:43.8424547+07:00","level":"INFO","msg":"stream: created new stream","id":"jnkecdh8"}
+{"time":"2025-06-28T08:09:43.8429655+07:00","level":"INFO","msg":"stream: started","id":"jnkecdh8"}
+{"time":"2025-06-28T08:09:43.8429655+07:00","level":"INFO","msg":"handler: started","stream_id":"jnkecdh8"}
+{"time":"2025-06-28T08:09:43.8429655+07:00","level":"INFO","msg":"sender: started","stream_id":"jnkecdh8"}
+{"time":"2025-06-28T08:09:43.8429655+07:00","level":"INFO","msg":"writer: Do: started","stream_id":"jnkecdh8"}
+{"time":"2025-06-28T08:09:44.2508157+07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-28T08:09:44.6614952+07:00","level":"INFO","msg":"stream: closing","id":"jnkecdh8"}
+{"time":"2025-06-28T08:09:44.6614952+07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-28T08:09:44.6614952+07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-28T08:09:46.3454097+07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-28T08:09:47.2488142+07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"jnkecdh8"}
+{"time":"2025-06-28T08:09:47.2488142+07:00","level":"INFO","msg":"sender: closed","stream_id":"jnkecdh8"}
+{"time":"2025-06-28T08:09:47.2488142+07:00","level":"INFO","msg":"handler: closed","stream_id":"jnkecdh8"}
+{"time":"2025-06-28T08:09:47.2495078+07:00","level":"INFO","msg":"stream: closed","id":"jnkecdh8"}

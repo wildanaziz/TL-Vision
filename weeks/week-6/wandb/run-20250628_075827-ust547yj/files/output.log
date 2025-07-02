@@ -1,0 +1,79 @@
+
+image 1/5 C:\Users\ACER\.vscode\TL-Vision\weeks\week-6\turtle-1\valid\images\turtle-2_mp4-0002_jpg.rf.1f76ecac5de5185ea8bc79d0550fbba0.jpg: 416x416 1 turtle, 4.9ms
+image 2/5 C:\Users\ACER\.vscode\TL-Vision\weeks\week-6\turtle-1\valid\images\turtle-2_mp4-0008_jpg.rf.817cc8309e5c4c1ec715864664096212.jpg: 416x416 1 turtle, 5.9ms
+image 3/5 C:\Users\ACER\.vscode\TL-Vision\weeks\week-6\turtle-1\valid\images\turtle-2_mp4-0009_jpg.rf.814b17520e50131fcdc4faaf1662d53b.jpg: 416x416 1 turtle, 14.3ms
+image 4/5 C:\Users\ACER\.vscode\TL-Vision\weeks\week-6\turtle-1\valid\images\turtle-2_mp4-0017_jpg.rf.843baba79d60944a8cb149bf3e4b8f9d.jpg: 416x416 1 turtle, 7.0ms
+image 5/5 C:\Users\ACER\.vscode\TL-Vision\weeks\week-6\turtle-1\valid\images\turtle-2_mp4-0028_jpg.rf.5f6e6102d5d1488663af396383457b72.jpg: 416x416 1 turtle, 16.0ms
+Speed: 1.6ms preprocess, 9.6ms inference, 14.5ms postprocess per image at shape (1, 3, 416, 416)
+Results saved to [1mC:\Users\ACER\runs\detect\pred_yolov8_before4[0m
+Tidak ada gambar di C:\Users\ACER\.vscode\TL-Vision\weeks\week-6\runs\detect\pred_yolov8_before
+Ultralytics 8.3.78 🚀 Python-3.13.2 torch-2.6.0+cu118 CPU (13th Gen Intel Core(TM) i5-13420H)
+
+[34m[1mPyTorch:[0m starting from 'C:\Users\ACER\.vscode\TL-Vision\weeks\week-6\yolov8-result\weights\best.pt' with input shape (1, 3, 416, 416) BCHW and output shape(s) (1, 5, 3549) (5.9 MB)
+
+[34m[1mOpenVINO:[0m starting export with openvino 2025.2.0-19140-c01cd93e24d-releases/2025/2...
+C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\openvino\runtime\__init__.py:10: DeprecationWarning: The `openvino.runtime` module is deprecated and will be removed in the 2026.0 release. Please replace `openvino.runtime` with `openvino`.
+  warnings.warn(
+[34m[1mOpenVINO:[0m export success ✅ 1.5s, saved as 'C:\Users\ACER\.vscode\TL-Vision\weeks\week-6\yolov8-result\weights\best_openvino_model\' (11.7 MB)
+
+Export complete (1.6s)
+Results saved to [1mC:\Users\ACER\.vscode\TL-Vision\weeks\week-6\yolov8-result\weights[0m
+Predict:         yolo predict task=detect model=C:\Users\ACER\.vscode\TL-Vision\weeks\week-6\yolov8-result\weights\best_openvino_model imgsz=416
+Validate:        yolo val task=detect model=C:\Users\ACER\.vscode\TL-Vision\weeks\week-6\yolov8-result\weights\best_openvino_model imgsz=416 data=C:/Users/ACER/.vscode/TL-Vision/weeks/week-6/turtle-1/data.yaml
+Visualize:       https://netron.app
+WARNING ⚠️ Unable to automatically guess model task, assuming 'task=detect'. Explicitly define task for your model, i.e. 'task=detect', 'segment', 'classify','pose' or 'obb'.
+Loading C:\Users\ACER\.vscode\TL-Vision\weeks\week-6\yolov8-result\weights\best_openvino_model for OpenVINO inference...
+Using OpenVINO LATENCY mode for batch=1 inference...
+Traceback (most recent call last):
+  File "c:\Users\ACER\.vscode\TL-Vision\weeks\week-6\export_predict_yolov8.py", line 46, in <module>
+    export_and_predict_only()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\ACER\.vscode\TL-Vision\weeks\week-6\export_predict_yolov8.py", line 40, in export_and_predict_only
+    yolov8_openvino.predict(source=sample_image, save=True, name="pred_yolov8_after")
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\ultralytics\engine\model.py", line 560, in predict
+    return self.predictor.predict_cli(source=source) if is_cli else self.predictor(source=source, stream=stream)
+                                                                    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\ultralytics\engine\predictor.py", line 175, in __call__
+    return list(self.stream_inference(source, model, *args, **kwargs))  # merge list of Result into one
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\utils\_contextlib.py", line 36, in generator_context
+    response = gen.send(None)
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\ultralytics\engine\predictor.py", line 261, in stream_inference
+    preds = self.inference(im, *args, **kwargs)
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\ultralytics\engine\predictor.py", line 145, in inference
+    return self.model(im, augment=self.args.augment, visualize=visualize, embed=self.args.embed, *args, **kwargs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\nn\modules\module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\ultralytics\nn\autobackend.py", line 612, in forward
+    y = list(self.ov_compiled_model(im).values())
+             ~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\openvino\_ov_api.py", line 429, in __call__
+    return self._infer_request.infer(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        inputs,
+        ^^^^^^^
+    ...<2 lines>...
+        decode_strings=decode_strings,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\openvino\_ov_api.py", line 173, in infer
+    return OVDict(super().infer(_data_dispatch(
+                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+        self,
+        ^^^^^
+        inputs,
+        ^^^^^^^
+        is_shared=share_inputs,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    ), share_outputs=share_outputs, decode_strings=decode_strings))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Exception from src\inference\src\cpp\infer_request.cpp:121:
+Exception from src\inference\src\cpp\infer_request.cpp:66:
+Exception from src\inference\src\dev\isync_infer_request.cpp:228:
+Failed to set tensor. Check 'is_dynamic || port.get_shape() == tensor->get_shape()' failed at src\inference\src\dev\isync_infer_request.cpp:287:
+The input tensor size is not equal to the model input type: got [1,3,640,640] expecting [1,3,416,416].
