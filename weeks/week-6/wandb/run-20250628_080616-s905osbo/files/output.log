@@ -1,0 +1,35 @@
+=== Processing YOLOv5 ===
+Traceback (most recent call last):
+  File "c:\Users\ACER\.vscode\TL-Vision\weeks\week-6\export_predict_yolov8.py", line 61, in <module>
+    main()
+    ~~~~^^
+  File "c:\Users\ACER\.vscode\TL-Vision\weeks\week-6\export_predict_yolov8.py", line 55, in main
+    export_and_predict_yolov5(sample_image, use_gpu)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ACER\.vscode\TL-Vision\weeks\week-6\export_predict_yolov8.py", line 17, in export_and_predict_yolov5
+    model_v5 = YOLO(r"C:\Users\ACER\.vscode\TL-Vision\weeks\week-6\yolov5-result\weights\best.pt")
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\ultralytics\models\yolo\model.py", line 23, in __init__
+    super().__init__(model=model, task=task, verbose=verbose)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\ultralytics\engine\model.py", line 148, in __init__
+    self._load(model, task=task)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\ultralytics\engine\model.py", line 291, in _load
+    self.model, self.ckpt = attempt_load_one_weight(weights)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\ultralytics\nn\tasks.py", line 905, in attempt_load_one_weight
+    ckpt, weight = torch_safe_load(weight)  # load ckpt
+                   ~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\ultralytics\nn\tasks.py", line 832, in torch_safe_load
+    ckpt = torch.load(file, map_location="cpu")
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\ultralytics\utils\patches.py", line 86, in torch_load
+    return _torch_load(*args, **kwargs)
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\serialization.py", line 1425, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\serialization.py", line 751, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python313\Lib\site-packages\torch\serialization.py", line 732, in __init__
+    super().__init__(open(name, mode))
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\ACER\\.vscode\\TL-Vision\\weeks\\week-6\\yolov5-result\\weights\\best.pt'
