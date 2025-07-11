@@ -1,0 +1,12 @@
+train: C:/Users/ACER/.vscode/TL-Vision/weeks/week-6/turtle-1/train/images
+val: C:/Users/ACER/.vscode/TL-Vision/weeks/week-6/turtle-1/valid/images
+
+nc: 1
+names: ['turtle']
+
+roboflow:
+  license: CC BY 4.0
+  project: turtle-ymyld
+  url: https://universe.roboflow.com/visionamarine/turtle-ymyld/dataset/1
+  version: 1
+  workspace: visionamarine
