@@ -27,6 +27,13 @@ syariefyolo
 
 ## 📈 Tracking Model dengan W&B
 
+## 📊 Project Tracking  
+Link ke project W&B:  
+
+- 🔗 [YOLO WandB Project] https://wandb.ai/syariefanwar-universitas-brawijaya/yolo-wandb-project?nw=nwusersyariefanwar 
+- 🔗 [Week-6 Project] https://wandb.ai/syariefanwar-universitas-brawijaya/week-6-project?nw=nwusersyariefanwar
+- 🔗 [Week-6] https://wandb.ai/syariefanwar-universitas-brawijaya/week-6?nw=nwusersyariefanwar
+
 ### Setup
 1. Daftar & login di [wandb.ai](https://wandb.ai)
 2. Install:
